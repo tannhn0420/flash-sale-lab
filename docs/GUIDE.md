@@ -59,7 +59,7 @@ Tất cả hạ tầng (Postgres, Redis, RabbitMQ, Kafka) chạy bằng Docker C
 | Redis | 6379 | RedisInsight 5540 |
 | RabbitMQ | 5672 | Management UI **15672** (guest/guest) |
 | Kafka | 9092 | Kafka UI **8085** |
-| Backend API | 8080 | Actuator `/actuator/health` |
+| Backend API | 8080 → **8090 trên máy này** (8080 bị app Caris chiếm) | Actuator `/actuator/health` |
 | Analytics service | 8081 | |
 | Frontend dev | 5173 | |
 

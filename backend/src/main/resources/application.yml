@@ -1,0 +1,20 @@
+# GUIDE §3 quy ước port 8080, nhưng máy này 8080 đã bị app Caris (công việc) chiếm.
+# Dùng 8090 — nếu muốn quay lại 8080: đổi dòng này + proxy trong frontend/vite.config.ts.
+server:
+  port: 8090
+
+spring:
+  application:
+    name: flashsale
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/flashsale
+    username: flashsale
+    password: flashsale
+
+  jpa:
+    hibernate:
+      # Schema là việc của Flyway. Hibernate chỉ VALIDATE entity khớp schema,
+      # không bao giờ tự sửa DB (tránh magic của ddl-auto: update).
+      ddl-auto: validate
+    open-in-view: false

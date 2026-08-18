@@ -1,0 +1,24 @@
+name: flash-sale-lab
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: fs-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: flashsale
+      POSTGRES_PASSWORD: flashsale
+      POSTGRES_DB: flashsale
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    # Healthcheck ngay từ đầu: các service sau này (backend chờ DB) sẽ dùng
+    # depends_on: condition: service_healthy thay vì sleep/retry thủ công.
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U flashsale -d flashsale"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:

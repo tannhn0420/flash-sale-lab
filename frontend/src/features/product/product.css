@@ -1,0 +1,54 @@
+.product-page {
+  max-width: 420px;
+  margin: 64px auto;
+  padding: 32px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+}
+
+.product-name {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+.product-price {
+  margin: 0 0 16px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d0021b;
+}
+
+.product-stock,
+.product-sale {
+  margin: 4px 0;
+  color: #444;
+}
+
+.product-buy {
+  margin-top: 24px;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #d0021b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-buy:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+}
+
+.product-status {
+  margin: 64px auto;
+  text-align: center;
+  color: #666;
+}
+
+.product-status--error {
+  color: #d0021b;
+}

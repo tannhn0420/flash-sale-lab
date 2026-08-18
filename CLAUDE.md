@@ -24,6 +24,12 @@ User đang **học công nghệ**, không phải cần ship feature nhanh. Vì v
 - `docs/CLEAN-CODE.md` — design pattern cấp code (GoF) & clean code BE/FE, map theo step; tối đa 1–2 pattern mới mỗi phase
 - `docs/PHASES.md` — kế hoạch step-by-step, checkbox tiến độ
 - `docs/reports/` — implementation report từng phase (flow, kết nối service, giải thích code)
+- `.claude/` — souls (subagents) & skills hỗ trợ đúng kỷ luật học (xem `.claude/README.md`)
+
+## Souls & Skills (`.claude/`)
+Đã cấu hình sẵn, tất cả tôn trọng quy tắc học (mentor/review, KHÔNG tự sinh feature):
+- Souls: `mentor` (Socratic), `java-reviewer` / `react-reviewer` / `messaging-reviewer` (review theo RULES B/C/D), `report-writer` (viết `docs/reports/`), `phase-guardian` (gác cổng phase/DoD).
+- Skills: `/phase-status`, `/write-report`, `/learning-log`, `/loadtest`.
 
 ## Commands (khi code đã hình thành)
 ```bash

@@ -14,6 +14,7 @@ User đang **học công nghệ**, không phải cần ship feature nhanh. Vì v
 4. Tuân thủ `docs/RULES.md` (coding convention) và `docs/PATTERNS.md` (pattern chuẩn của repo).
 5. Sau mỗi phase, nhắc user viết `docs/LEARNING-LOG.md` và chạy load test so sánh trước/sau.
 6. Code review: chỉ ra vấn đề + giải thích, không tự sửa trừ khi được yêu cầu.
+7. **Sau MỖI lần implement** (dù AI code hay review code user): viết/cập nhật **implementation report** vào `docs/reports/phase-N-<ten>.md` — chi tiết từng bước đã làm + ý nghĩa, các service kết nối với nhau thế nào (port, config ở đâu), flow request/startup đi qua những đâu, và giải thích từng đoạn code quan trọng. Mẫu: `docs/reports/phase-0-setup.md`.
 
 ## Tài liệu
 - `docs/GUIDE.md` — learning workflow, setup, glossary
@@ -22,6 +23,7 @@ User đang **học công nghệ**, không phải cần ship feature nhanh. Vì v
 - `docs/PATTERNS.md` — pattern kiến trúc/tích hợp (cache, queue, event)
 - `docs/CLEAN-CODE.md` — design pattern cấp code (GoF) & clean code BE/FE, map theo step; tối đa 1–2 pattern mới mỗi phase
 - `docs/PHASES.md` — kế hoạch step-by-step, checkbox tiến độ
+- `docs/reports/` — implementation report từng phase (flow, kết nối service, giải thích code)
 
 ## Commands (khi code đã hình thành)
 ```bash
